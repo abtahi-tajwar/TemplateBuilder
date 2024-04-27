@@ -10,3 +10,7 @@ export const exitLabelActiveTemplateFields = [
     { id: "test_results", label: "Test Results" },
     { id: "total_terpenes", label: "Total Responses" }
 ]
+export const packageLabelActiveTemplateFields = [
+    { id: "product_name", label: "Product Name" },
+    { id: "product_price", label: "Product Price" }
+]

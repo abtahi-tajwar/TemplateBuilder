@@ -1,6 +1,7 @@
 import React from "react";
-import { rootStyles } from "../rootStyle";
-import { exitLabelActiveTemplateFields } from "./templateConstants";
+import { rootStyles } from "../../rootStyle";
+import { exitLabelActiveTemplateFields } from "../templateConstants";
+import CommonValueTemplate from "../CommonValueTemplate";
 
 function ExitLabel() {
   return (
@@ -9,19 +10,7 @@ function ExitLabel() {
         <b>Exit Label</b>
       </div>
       <div>
-        {exitLabelActiveTemplateFields.map((field) => (
-          <div style={styles.row} key={field.id}>
-            <span>{field.label}: {" "}</span>
-            <span
-              style={rootStyles.dynamicValue}
-              className="dynamic-value"
-              data-gjs-type="default"
-              id={`d-${field.id}`}
-            >
-              values to be populated dynamically
-            </span>
-          </div>
-        ))}
+        <CommonValueTemplate templateFields={exitLabelActiveTemplateFields} />
 
         <p style={styles.row}>
           <b>
