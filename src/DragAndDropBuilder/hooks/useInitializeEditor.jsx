@@ -6,11 +6,12 @@ import { styleManager } from "../styleManager";
 import { panels } from "../panels";
 import { exitLabelBlocks } from "../templates/ExitLabel/exitLabelBlocks";
 import { packageLabelBlocks } from "../templates/PackageLabel/packageLabelBlocks";
+import { receiptBlocks } from "../templates/Receipt/receiptBlocks";
 
 const LabelBlocks = {
   PACKAGE_LABEL: packageLabelBlocks,
   EXIT_LABEL: exitLabelBlocks,
-  RECEIPT: <h1>Receipt</h1>,
+  RECEIPT: receiptBlocks,
   DELIVERY_RECEIPT: <h1>Delivery Receipt</h1>,
   PRE_ORDER_FULFILLMENT_PULL_SHEET: <h1>Pre Order Fulfillment Pull Sheet</h1>,
 };

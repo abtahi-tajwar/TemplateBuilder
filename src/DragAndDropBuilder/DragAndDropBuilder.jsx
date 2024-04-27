@@ -10,13 +10,16 @@ import useInitializeEditor from "./hooks/useInitializeEditor";
 import PackageLabel from "./templates/PackageLabel/PackageLabel";
 import ExitLabel from "./templates/ExitLabel/ExitLabel";
 import { LabelFieldMap } from "./constants";
+import Receipt from "./templates/Receipt/Receipt";
+import DeliveryReceipt from "./templates/DeliveryReceipt/DeliveryReceipt";
+import PreOrderPullSheet from "./templates/PreOrderPullSheet/PreOrderPullSheet";
   
 export const LabelTemplates = {
   PACKAGE_LABEL: ({ ...props }) => <PackageLabel {...props} />,
   EXIT_LABEL: ({ ...props }) => <ExitLabel {...props} />,
-  RECEIPT: ({ ...props }) => <h1>Receipt</h1>,
-  DELIVERY_RECEIPT: ({ ...props }) => <h1>Delivery Receipt</h1>,
-  PRE_ORDER_FULFILLMENT_PULL_SHEET: ({ ...props }) => <h1>Pre Order Fulfillment Pull Sheet</h1>
+  RECEIPT: ({ ...props }) => <Receipt {...props} />,
+  DELIVERY_RECEIPT: ({ ...props }) => <DeliveryReceipt {...props} />,
+  PRE_ORDER_FULFILLMENT_PULL_SHEET: ({ ...props }) => <PreOrderPullSheet {...props} />
 }
 
 export function DragAndDropBuilder({ height, width, type, margins }) {

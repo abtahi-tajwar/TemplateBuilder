@@ -18,7 +18,7 @@ export const CommonBlocks = (item) => /*html*/ `
             text-align: right;
         }
     </style>
-    <div class="common_blocks_container">
+    <div class="common_blocks_container" id="container-${item.id}">
         <span>${item.label} :</span>
         <span
             class="common_blocks_dynamic_value"
