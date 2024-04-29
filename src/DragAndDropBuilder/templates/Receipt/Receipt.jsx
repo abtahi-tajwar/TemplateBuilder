@@ -14,23 +14,25 @@ function Receipt() {
           <img id="d-company_logo" style={styles.logo} src={BleumLogo} alt="Company Logo" />
         </div>
         <div style={{ textAlign: 'center' }} id="container-print_date">
-          <p style={{ margin: 0, padding: 0 }} id="d-print_date" >{moment(new Date()).format('MMMM Do YYYY, h:mm:ss a')}</p>
+          <p style={{ margin: 0, padding: 0 }}><span id="d-print_date">{moment(new Date()).format('MMMM Do YYYY, h:mm:ss a')}</span></p>
         </div>
         
         <div style={styles.metaInfoContainer}>
-          <h3 data-gjs-type="default" id="d-store_name" style={{ margin: 0, padding: 0 }}>(Dynamic) Company Name</h3>
-          <p data-gjs-type="default" id="d-store_email" style={{ margin: 0, padding: 0 }}>(Dynamic) Store Email</p>
-          <p data-gjs-type="default" id="d-store_address" style={{ margin: 0, padding: 0 }}>(Dynamic) Store Address</p>
-          <p data-gjs-type="default" id="d-store_phone" style={{ margin: 0, padding: 0 }}>(Dynamic) Store Phone</p>
+          <h3 data-gjs-type="default" id="container-store_name" style={{ margin: 0, padding: 0 }}><span id="d-store_name">(Dynamic) Company Name</span></h3>
+          <p data-gjs-type="default" id="container-store_email" style={{ margin: 0, padding: 0 }}><span id="d-store_email">(Dynamic) Store Email</span></p>
+          <p data-gjs-type="default" id="container-store_address" style={{ margin: 0, padding: 0 }}><span id="d-store_address">(Dynamic) Store Address</span></p>
+          <p data-gjs-type="default" id="container-store_phone" style={{ margin: 0, padding: 0 }}><span id="d-store_phone">(Dynamic) Store Phone</span></p>
         </div>
 
         <div style={styles.valuePairs}>
           <CommonValueTemplate templateFields={receiptLabelTemplateFields} />
         </div>
         <div id="d-order_contents" style={styles.orderContents}>Order Contents</div>
-        <b>*If applicable the cannabis excise taxes are included in the total amount of this invoice.</b>
-        <div style={styles.qrCodeContainer}>
-          <Barcode value="https://bleaum.io/" />
+        <div className="container-excise_tax_notification">
+          <b><span id="d-excise_tax_notification">*If applicable the cannabis excise taxes are included in the total amount of this invoice.</span></b>
+        </div>
+        <div style={styles.qrCodeContainer} id="container-order_barcode">
+          <Barcode id="d-order_barcode" value="https://bleaum.io/" />
         </div>
       </div>
     </>

@@ -3,8 +3,8 @@ import { BarcodeBlock, CommonBlocks, QRBlock } from "../blockTemplates";
 import { CommonBlocksDefinition } from "../commonBlocksDefinition";
 
 const CustomSections = {
-  test_results_qr: QRBlock(),
-  package_barcode: BarcodeBlock()
+  test_results_qr: QRBlock('test_results_qr'),
+  package_barcode: BarcodeBlock('package_barcode')
 };
 export const packageLabelBlocks = [
   ...LabelFieldMap.PACKAGE_LABEL.fields.map((item) => ({

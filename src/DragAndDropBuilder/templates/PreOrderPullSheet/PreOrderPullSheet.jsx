@@ -18,9 +18,9 @@ function PreOrderPullSheet() {
         Order Contents
       </div>
 
-      <div style={styles.qrCodeContainer}>
-        <Barcode value="https://bleaum.io/" />
-      </div>
+      <div style={styles.qrCodeContainer} id="container-order_barcode">
+          <Barcode id="d-order_barcode" value="https://bleaum.io/" />
+        </div>
     </>
   );
 }

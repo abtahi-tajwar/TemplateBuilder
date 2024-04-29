@@ -21,7 +21,7 @@ const CustomSections = {
     </style>
     <div id="d-order_contents" class="order-content-block-container">Order Contents</div>
 `,
-  order_barcode: BarcodeBlock(),
+  order_barcode: BarcodeBlock('order_barcode'),
   company_logo: /*html*/ `
         <style>
             .company_logo_block_container {
@@ -41,17 +41,20 @@ const CustomSections = {
         <b>*If applicable the cannabis excise taxes are included in the total amount of this invoice.</b>
     `,
   store_name: /*html*/ `
-        <h3 data-gjs-type="default" id="d-store_name">(Dynamic) Store Name </h3>
-    `,
-  store_website: /*html*/ `
-        <i data-gjs-type="default" id="d-store_email">(Dynamic) Store Email </i>
-    `,
+    <h3 data-gjs-type="default"><span id="d-store_name">(Dynamic) Company Name</span></h3>
+`,
+  store_email: /*html*/ `
+    <p data-gjs-type="default"><span id="d-store_email">(Dynamic) Store Email</span></p>
+`,
   store_address: /*html*/ `
-        <p data-gjs-type="default" id="d-store_email">(Dynamic) Store Email </p>
-    `,
+    <p data-gjs-type="default"><span id="d-store_address">(Dynamic) Store Address</span></p>
+`,
   store_phone: /*html*/ `
-        <p data-gjs-type="default" id="d-store_phone">(Dynamic) Store Phone </p>
-    `,
+    <p data-gjs-type="default"><span id="d-store_phone">(Dynamic) Store Phone</span></p>
+`,
+  store_website: /*html*/ `
+    <p data-gjs-type="default"><span id="d-store_website">(Dynamic) Store Website</span></p>
+`,
 };
 export const deliveryReceiptBlocks = [
   ...LabelFieldMap.DELIVERY_RECEIPT.fields.map((item) => ({

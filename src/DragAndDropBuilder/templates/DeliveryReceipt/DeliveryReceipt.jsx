@@ -14,15 +14,17 @@ function DeliveryReceipt() {
           <img id="d-company_logo" style={styles.logo} src={BleumLogo} alt="conpany-logo" />
         </div>
         <div style={{ textAlign: 'center' }} id="container-print_date">
-          <p style={{ margin: 0, padding: 0 }} id="d-print_date" >{moment(new Date()).format('MMMM Do YYYY, h:mm:ss a')}</p>
+          <span style={{ margin: 0, padding: 0 }} id="d-print_date" >{moment(new Date()).format('MMMM Do YYYY, h:mm:ss a')}</span>
         </div>
         <div style={styles.valuePairs}>
           <CommonValueTemplate templateFields={deliveryReceiptLabelTemplateFields} />
         </div>
         <div id="d-order_contents" style={styles.orderContents}>Order Contents</div>
-        <b>*If applicable the cannabis excise taxes are included in the total amount of this invoice.</b>
-        <div style={styles.qrCodeContainer}>
-          <Barcode value="https://bleaum.io/" />
+        <div className="container-excise_tax_notification">
+          <b><span id="d-excise_tax_notification">*If applicable the cannabis excise taxes are included in the total amount of this invoice.</span></b>
+        </div>
+        <div style={styles.qrCodeContainer} id="container-order_barcode">
+          <Barcode id="d-order_barcode" value="https://bleaum.io/" />
         </div>
       </div>
     </>

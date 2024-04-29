@@ -3,7 +3,7 @@ import { rootStyles } from "../rootStyle";
 
 function CommonValueTemplate({ templateFields }) {
   return templateFields.map((field) => (
-    <div style={styles.row} key={field.id} id={`common-${field.id}`}>
+    <div style={styles.row} key={field.id} id={`container-${field.id}`}>
       <span style={styles.label}>{field.label}: </span>
       <span
         style={rootStyles.dynamicValue}

@@ -52,6 +52,7 @@ export const styleManager = {
         "flex-direction",
         "justify-content",
         "align-items",
+        "gap"
       ],
       properties: [
         {
@@ -65,6 +66,13 @@ export const styleManager = {
             { id: "inline", label: "Inline" },
             { id: "inline-block", label: "Inline-Block" },
           ],
+        },
+        {
+          type: "number",
+          label: "Gap",
+          property: "gap",
+          default: "5px",
+          units: ["px"]
         },
         {
           type: "radio",

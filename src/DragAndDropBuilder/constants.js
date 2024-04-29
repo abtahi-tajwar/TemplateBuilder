@@ -85,7 +85,7 @@ export const LabelFieldMap = {
       { id: "store_address", label: "Store Address", custom: true },
       { id: "store_phone", label: "Store Phone", custom: true },
       { id: "store_website", label: "Store Website", custom: true },
-      { id: "store_email", label: "Store Email" },
+      { id: "store_email", label: "Store Email", custom: true },
       { id: "batch_id", label: "Batch ID" },
       { id: "budtender", label: "Budtender" },
       { id: "budtenderId", label: "Budtender ID" },
@@ -120,7 +120,7 @@ export const LabelFieldMap = {
       { id: "store_address", label: "Store Address", custom: true },
       { id: "store_phone", label: "Store Phone", custom: true },
       { id: "store_website", label: "Store Website", custom: true },
-      { id: "store_email", label: "Store Email" },
+      { id: "store_email", label: "Store Email", custom: true },
       { id: "batch_id", label: "Batch ID" },
       { id: "budtender", label: "Budtender" },
       { id: "budtenderId", label: "Budtender ID" },
@@ -154,7 +154,8 @@ export const LabelFieldMap = {
       { id: "customer_phone", label: "Customer Phone" },
       { id: "delivery_address", label: "Delivery Address" },
       { id: "preorder_notes", label: "PreOrder Notes" },
-      { id: "company_logo", label: "Company Logo", custom: true }
+      { id: "company_logo", label: "Company Logo", custom: true },
+      { id: "order_barcode", label: "Order Barcode", custom: true }
     ],
     margins: {
       top: "0.1in",
