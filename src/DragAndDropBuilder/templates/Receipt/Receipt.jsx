@@ -26,10 +26,10 @@ function Receipt() {
           <p data-gjs-type="default" id="d-store_phone" style={{ margin: 0, padding: 0 }}>(Dynamic) Store Phone</p>
         </div>
 
-        <div id="d-order_contents" style={styles.orderContents}>Order Contents</div>
         <div style={styles.valuePairs}>
           <CommonValueTemplate templateFields={receiptLabelTemplateFields} />
         </div>
+        <div id="d-order_contents" style={styles.orderContents}>Order Contents</div>
         <b>*If applicable the cannabis excise taxes are included in the total amount of this invoice.</b>
         <div style={styles.qrCodeContainer}>
           <Barcode value="https://bleaum.io/" />
@@ -75,7 +75,8 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     fontSize: 20,
-    marginTop: 20
+    marginTop: 20,
+    marginBottom: 20
   },
   metaDivider: {
     borderBottom: '1px solid gray', 

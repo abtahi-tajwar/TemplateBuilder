@@ -7,13 +7,15 @@ import { panels } from "../panels";
 import { exitLabelBlocks } from "../templates/ExitLabel/exitLabelBlocks";
 import { packageLabelBlocks } from "../templates/PackageLabel/packageLabelBlocks";
 import { receiptBlocks } from "../templates/Receipt/receiptBlocks";
+import { deliveryReceiptBlocks } from "../templates/DeliveryReceipt/deliveryReceiptBlocks";
+import { pullSheetBlocks } from "../templates/PreOrderPullSheet/pullSheetLabelBlocks";
 
 const LabelBlocks = {
   PACKAGE_LABEL: packageLabelBlocks,
   EXIT_LABEL: exitLabelBlocks,
   RECEIPT: receiptBlocks,
-  DELIVERY_RECEIPT: <h1>Delivery Receipt</h1>,
-  PRE_ORDER_FULFILLMENT_PULL_SHEET: <h1>Pre Order Fulfillment Pull Sheet</h1>,
+  DELIVERY_RECEIPT: deliveryReceiptBlocks,
+  PRE_ORDER_FULFILLMENT_PULL_SHEET: pullSheetBlocks,
 };
 
 function useInitializeEditor({ height, width, type }) {
