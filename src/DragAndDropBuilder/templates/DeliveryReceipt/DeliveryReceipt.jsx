@@ -1,8 +1,6 @@
 import React from "react";
-import { rootStyles } from "../../rootStyle";
-import { deliveryReceiptLabelTemplateFields, exitLabelActiveTemplateFields, packageLabelActiveTemplateFields, receiptLabelTemplateFields } from "../templateConstants";
+import { deliveryReceiptLabelTemplateFields } from "../templateConstants";
 import CommonValueTemplate from "../CommonValueTemplate";
-import QRCode from "react-qr-code";
 import Barcode from "react-barcode";
 import BleumLogo from '../../../assets/bleaum-logo.webp'
 import moment from "moment";
@@ -13,7 +11,7 @@ function DeliveryReceipt() {
     <>
       <div>
         <div style={styles.logoContainer} id="container-company_logo">
-          <img id="d-company_logo" style={styles.logo} src={BleumLogo} />
+          <img id="d-company_logo" style={styles.logo} src={BleumLogo} alt="conpany-logo" />
         </div>
         <div style={{ textAlign: 'center' }} id="container-print_date">
           <p style={{ margin: 0, padding: 0 }} id="d-print_date" >{moment(new Date()).format('MMMM Do YYYY, h:mm:ss a')}</p>

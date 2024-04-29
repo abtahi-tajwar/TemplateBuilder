@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.823a35ec.css",
+    "main.js": "/static/js/main.28685b13.js",
+    "static/media/desktop.svg": "/static/media/desktop.52cec3b6367a0f09f4b4.svg",
+    "static/media/mobile.svg": "/static/media/mobile.8d699be0acd66e1b7130.svg",
+    "index.html": "/index.html",
+    "static/media/bleaum-logo.webp": "/static/media/bleaum-logo.31d6cfe0d16ae931b73c.webp",
+    "main.823a35ec.css.map": "/static/css/main.823a35ec.css.map",
+    "main.28685b13.js.map": "/static/js/main.28685b13.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.823a35ec.css",
+    "static/js/main.28685b13.js"
+  ]
+}

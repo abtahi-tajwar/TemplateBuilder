@@ -154,7 +154,7 @@ function useInitializeEditor({ height, width, type }) {
 
       setEditor(_editor);
     }
-  }, []);
+  }, [editor, height, width, type]);
 
   // useEffect(() => {
   //   if (editor) {

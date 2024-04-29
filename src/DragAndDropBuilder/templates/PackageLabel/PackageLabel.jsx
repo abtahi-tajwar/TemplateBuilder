@@ -1,8 +1,6 @@
 import React from "react";
-import { rootStyles } from "../../rootStyle";
-import { exitLabelActiveTemplateFields, packageLabelActiveTemplateFields } from "../templateConstants";
+import { packageLabelActiveTemplateFields } from "../templateConstants";
 import CommonValueTemplate from "../CommonValueTemplate";
-import QRCode from "react-qr-code";
 import Barcode from "react-barcode";
 
 

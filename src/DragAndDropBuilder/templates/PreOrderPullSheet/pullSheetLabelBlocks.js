@@ -1,7 +1,5 @@
-import QRCode from "react-qr-code";
 import { LabelFieldMap } from "../../constants";
-import { rootStyles } from "../../rootStyle";
-import { BarcodeBlock, CommonBlocks, QRBlock } from "../blockTemplates";
+import { BarcodeBlock, CommonBlocks } from "../blockTemplates";
 import { CommonBlocksDefinition } from "../commonBlocksDefinition";
 
 const CustomSections = {

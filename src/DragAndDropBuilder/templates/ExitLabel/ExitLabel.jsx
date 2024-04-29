@@ -1,5 +1,4 @@
 import React from "react";
-import { rootStyles } from "../../rootStyle";
 import { exitLabelActiveTemplateFields } from "../templateConstants";
 import CommonValueTemplate from "../CommonValueTemplate";
 

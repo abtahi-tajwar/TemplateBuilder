@@ -1,11 +1,5 @@
 import "grapesjs/dist/css/grapes.min.css";
 import "./gjs.css";
-import grapesjs from "grapesjs";
-import { useEffect, useState } from "react";
-import { styleManager } from "./styleManager";
-import { panels } from "./panels";
-import { blocks } from "./blocks";
-import { exitLabelBlocks } from "./templates/ExitLabel/exitLabelBlocks";
 import useInitializeEditor from "./hooks/useInitializeEditor";
 import PackageLabel from "./templates/PackageLabel/PackageLabel";
 import ExitLabel from "./templates/ExitLabel/ExitLabel";
