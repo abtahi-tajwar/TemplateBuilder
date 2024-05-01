@@ -24,6 +24,7 @@ export const LabelFieldMap = {
       { id: "expiration_date", label: "Expiration Date" },
       { id: "package_text", label: "Package Text" },
       { id: "package_barcode", label: "Package Barcode", custom: true },
+      { id: "current_datetime", label: "Date & Time", custom: true }
     ],
     margins: {
       top: "0.05in",
@@ -62,6 +63,7 @@ export const LabelFieldMap = {
       { id: "product_category", label: "Product Category" },
       { id: "product_price", label: "Product Price" },
       { id: "expiration_date", label: "Expiration Date" },
+      { id: "current_datetime", label: "Date & Time", custom: true }
     ],
     margins: {
       top: "0.1in",
@@ -97,6 +99,7 @@ export const LabelFieldMap = {
       { id: "excise_tax_notification", label: "Excise Tax Notification", custom: true },
       { id: "order_contents", label: "Order Contents", custom: true },
       { id: "order_barcode", label: "Order Barcode", custom: true },
+      { id: "current_datetime", label: "Date & Time", custom: true }
     ],
     margins: {
       top: "0.1in",
@@ -132,6 +135,7 @@ export const LabelFieldMap = {
       { id: "excise_tax_notification", label: "Excise Tax Notification", custom: true },
       { id: "order_contents", label: "Order Contents", custom: true },
       { id: "order_barcode", label: "Order Barcode", custom: true },
+      { id: "current_datetime", label: "Date & Time", custom: true }
     ],
     margins: {
       top: "0.1in",
@@ -155,7 +159,8 @@ export const LabelFieldMap = {
       { id: "delivery_address", label: "Delivery Address" },
       { id: "preorder_notes", label: "PreOrder Notes" },
       { id: "company_logo", label: "Company Logo", custom: true },
-      { id: "order_barcode", label: "Order Barcode", custom: true }
+      { id: "order_barcode", label: "Order Barcode", custom: true },
+      { id: "current_datetime", label: "Date & Time", custom: true }
     ],
     margins: {
       top: "0.1in",

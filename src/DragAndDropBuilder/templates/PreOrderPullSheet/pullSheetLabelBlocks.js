@@ -1,6 +1,7 @@
 import { LabelFieldMap } from "../../constants";
 import { BarcodeBlock, CommonBlocks } from "../blockTemplates";
 import { CommonBlocksDefinition } from "../commonBlocksDefinition";
+import moment from "moment";
 
 const CustomSections = {
   order_contents: /*html*/ `
@@ -21,7 +22,7 @@ const CustomSections = {
     </style>
     <div id="d-order_contents" class="order-content-block-container">Order Contents</div>
 `,
-  order_barcode: BarcodeBlock(),
+  order_barcode: BarcodeBlock("order_barcode"),
   company_logo: /*html*/ `
         <style>
             .company_logo_block_container {
@@ -40,6 +41,9 @@ const CustomSections = {
   order_time: /*html*/ `
         <p data-gjs-type="default" id="d-order_time">(Dynamic) Order Time </p>
     `,
+  current_datetime: /*html*/`
+    <p class="container-current_datetime"><span class="d-current_datetime">(dynamic) ${moment(new Date()).format('MMMM Do YYYY, h:mm:ss a')}</span></p>
+  `,
 };
 export const pullSheetBlocks = [
   ...LabelFieldMap.PRE_ORDER_FULFILLMENT_PULL_SHEET.fields.map((item) => ({
