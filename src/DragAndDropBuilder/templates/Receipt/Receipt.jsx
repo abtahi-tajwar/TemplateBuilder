@@ -27,7 +27,7 @@ function Receipt() {
         <div style={styles.valuePairs}>
           <CommonValueTemplate templateFields={receiptLabelTemplateFields} />
         </div>
-        <div id="d-order_contents" style={styles.orderContents}>Order Contents</div>
+        <div id="container-order_contents" class="container-order_contents" style={styles.orderContents}>Order Contents</div>
         <div className="container-excise_tax_notification">
           <b><span id="d-excise_tax_notification">*If applicable the cannabis excise taxes are included in the total amount of this invoice.</span></b>
         </div>

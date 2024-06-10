@@ -19,11 +19,9 @@ export const packageLabelActiveTemplateFields = [
 export const receiptLabelTemplateFields = [
   { id: "store_id", label: "Store #" },
   { id: "order_id", label: "Order #" },
-  { id: "budtender", label: "Budtender" },
   { id: "customer_name", label: "Customer Name" },
   { id: "customer_type", label: "Customer Type" },
   { id: "customer_id", label: "Patient #" },
-  { id: "loyalty_points_earned", label: "Current Loyalty Points Earned" },
 ];
 export const deliveryReceiptLabelTemplateFields = [
   { id: "store_id", label: "Store #" },

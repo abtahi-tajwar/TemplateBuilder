@@ -9,12 +9,12 @@ function PackageLabel() {
     <>
       <div>
         <CommonValueTemplate templateFields={packageLabelActiveTemplateFields} />
-        <div style={styles.qrCodeContainer}>
-          <Barcode value="https://bleaum.io/" />
+        <div style={styles.qrCodeContainer} id="container-package_barcode">
+          <Barcode id="d-package_barcode" value="https://bleaum.io/" />
         </div>
       </div>
     </>
-  );
+  ); 
 }
 
 const styles = {
